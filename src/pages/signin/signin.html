@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background:url('../../assets/imgs/estrela.png')">
+  <form (ngSubmit)="enterNickname()">
+    <ion-list>
+      <ion-item style="padding: 0px !important;border-top: none;font-size: 14px;margin-top: 10px;background:none;border-bottom: 1px solid white;box-shadow: none; color:#fff;">
+        <ion-label floating style="color:#fff">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]="data.nickname" name="nickname" required=""></ion-input>
+      </ion-item>
+
+      <ion-item style="padding: 0px !important;border-top: none;font-size: 14px;margin-top: 10px;background:none;border-bottom: 1px solid white;box-shadow: none;" >
+        <button ion-button full round type="submit">Enter</button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
